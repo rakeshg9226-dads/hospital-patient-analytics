@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hospital Patient Analytics | Power BI Portfolio</title>
+<meta name="description" content="Hospital Patient Analytics dashboard portfolio project built with Microsoft Power BI.">
+<style>
+:root{--navy:#12304a;--blue:#0d6efd;--teal:#12b8a6;--bg:#f3f6fa;--ink:#183247;--muted:#64788b;--line:#dfe7ef}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,Segoe UI,Arial,sans-serif}
+.wrap{max-width:1100px;margin:auto;padding:28px 22px 56px}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 0 24px}
+.brand{font-weight:800;color:var(--navy);letter-spacing:.2px}.tag{font-size:.82rem;color:#eaf6ff;background:#214c69;border-radius:999px;padding:6px 12px}
+.hero{background:linear-gradient(125deg,#12304a,#176184);color:white;padding:44px;border-radius:22px;box-shadow:0 16px 38px #12304a20}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.76rem;font-weight:800;color:#9fe6df}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.12;margin:10px 0 16px;max-width:760px}
+.hero p{color:#e1edf5;max-width:760px;margin:0 0 25px}
+.btn{display:inline-block;background:#fff;color:var(--navy);font-weight:800;text-decoration:none;border-radius:10px;padding:12px 17px;margin:4px 8px 4px 0}
+.btn.secondary{background:#0d6efd;color:white}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:22px 0}
+.card{background:white;border:1px solid var(--line);border-radius:16px;padding:21px;box-shadow:0 5px 18px #12304a08}
+.card h2,.section h2{font-size:1.18rem;color:var(--navy);margin:0 0 8px}
+.metric{font-size:1.65rem;font-weight:850;color:var(--navy)}.small{font-size:.9rem;color:var(--muted)}
+.section{margin-top:34px}.section p{max-width:850px}
+.features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.feature{background:white;border:1px solid var(--line);border-radius:12px;padding:15px}
+.feature strong{display:block;color:var(--navy);margin-bottom:3px}
+.preview{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:18px}
+.preview-top{height:18px;background:var(--navy);border-radius:8px;margin-bottom:16px}
+.preview-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}
+.kpi{height:65px;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:9px;padding:8px;font-size:.72rem;color:var(--muted)}
+.kpi b{display:block;font-size:1rem;color:var(--navy);margin-top:4px}
+.chart-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px;margin-top:10px}
+.chart{height:140px;border:1px solid var(--line);border-radius:9px;padding:12px;display:flex;align-items:end;gap:7px;position:relative;overflow:hidden}
+.chart:before{content:attr(data-label);position:absolute;top:8px;left:10px;font-size:.75rem;font-weight:700;color:var(--navy)}
+.bar{width:13%;background:var(--blue);border-radius:4px 4px 0 0;opacity:.88}
+.bar:nth-child(even){background:var(--teal)}
+footer{margin-top:42px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.86rem}
+@media(max-width:760px){.hero{padding:28px}.grid{grid-template-columns:1fr}.features{grid-template-columns:1fr}.preview-grid{grid-template-columns:repeat(2,1fr)}.chart-grid{grid-template-columns:1fr}.chart{height:120px}nav{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="brand">DATA ANALYTICS PORTFOLIO</div><div class="tag">POWER BI PROJECT</div></nav>
+<header class="hero">
+  <div class="eyebrow">Healthcare • Business Intelligence • Data Visualization</div>
+  <h1>Hospital Patient Analytics Dashboard</h1>
+  <p>A Power BI portfolio project designed to explore hospital operations, patient demographics, department workload, admissions and discharges, billing, insurance coverage, and patient satisfaction.</p>
+  <a class="btn secondary" href="Hospital_Patient_Dashboard.pbix" download>Download Power BI Report (.pbix)</a>
+  <a class="btn" href="#features">Explore project details ↓</a>
+</header>
+
+<section class="grid" aria-label="Project summary">
+  <div class="card"><div class="small">BI tool</div><div class="metric">Power BI</div><div class="small">Report design, data model and visuals</div></div>
+  <div class="card"><div class="small">Core techniques</div><div class="metric">Power Query + DAX</div><div class="small">Data preparation and KPI calculations</div></div>
+  <div class="card"><div class="small">Report scope</div><div class="metric">7 analysis areas</div><div class="small">Patients, departments, finance and outcomes</div></div>
+</section>
+
+<section class="section" id="features">
+<h2>Dashboard capabilities</h2>
+<div class="features">
+  <div class="feature"><strong>Hospital overview</strong>High-level KPIs and a snapshot of patient activity.</div>
+  <div class="feature"><strong>Patient demographics</strong>Explore age groups, gender, diagnoses and treatments.</div>
+  <div class="feature"><strong>Department analysis</strong>Compare patient volumes and operational workload.</div>
+  <div class="feature"><strong>Financial analysis</strong>Review billing, patient payments and insurance coverage.</div>
+  <div class="feature"><strong>Doctor analysis</strong>Explore patient volumes and satisfaction by doctor.</div>
+  <div class="feature"><strong>Admissions and discharges</strong>Review admission types, length of stay and discharge status.</div>
+  <div class="feature"><strong>Insurance and satisfaction</strong>Compare insurance providers and satisfaction scores.</div>
+  <div class="feature"><strong>Interactive exploration</strong>Use report filters and visuals in Power BI Desktop.</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Dashboard layout preview</h2>
+<p class="small">Illustrative layout only — this is a website preview, not a screenshot or live rendering of the Power BI report. Download the PBIX file to inspect the actual report.</p>
+<div class="preview" aria-label="Illustrative dashboard layout">
+  <div class="preview-top"></div>
+  <div class="preview-grid">
+    <div class="kpi">Total Patients<b>Patient KPI</b></div>
+    <div class="kpi">Total Billing<b>Billing KPI</b></div>
+    <div class="kpi">Average Stay<b>Stay KPI</b></div>
+    <div class="kpi">Satisfaction<b>Score KPI</b></div>
+    <div class="kpi">Coverage<b>Insurance KPI</b></div>
+  </div>
+  <div class="chart-grid">
+    <div class="chart" data-label="Admissions trend"><i class="bar" style="height:28%"></i><i class="bar" style="height:44%"></i><i class="bar" style="height:38%"></i><i class="bar" style="height:70%"></i><i class="bar" style="height:58%"></i><i class="bar" style="height:84%"></i></div>
+    <div class="chart" data-label="Department comparison"><i class="bar" style="height:60%"></i><i class="bar" style="height:85%"></i><i class="bar" style="height:43%"></i><i class="bar" style="height:72%"></i><i class="bar" style="height:51%"></i></div>
+    <div class="chart" data-label="Patient mix"><i class="bar" style="height:50%"></i><i class="bar" style="height:68%"></i><i class="bar" style="height:37%"></i><i class="bar" style="height:80%"></i></div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<h2>How to open the report</h2>
+<ol>
+<li>Download the <code>Hospital_Patient_Dashboard.pbix</code> file using the button above.</li>
+<li>Install or open Microsoft Power BI Desktop.</li>
+<li>Open the downloaded PBIX file and explore its report pages, filters and visual interactions.</li>
+</ol>
+<p class="small">This portfolio page hosts the downloadable report. GitHub Pages does not run a native PBIX file interactively in the browser.</p>
+</section>
+
+<section class="section">
+<h2>Privacy and responsible use</h2>
+<p>Only publish this project publicly after verifying that the underlying report and data contain no real or identifiable patient information. Use synthetic or properly anonymized data. Do not upload private health information to a public repository.</p>
+</section>
+<footer>Hospital Patient Analytics • Power BI Portfolio Project<br>Replace this footer with your preferred professional contact links if desired.</footer>
+</div>
+</body>
+</html>

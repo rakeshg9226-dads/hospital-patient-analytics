@@ -1,34 +1,38 @@
-# Hospital Patient Analytics Dashboard
+# Hospital Patient Analytics — Power BI Portfolio
 
-## Project Overview
-An interactive hospital analytics dashboard developed using Microsoft Power BI to analyze patient demographics, admissions, departments, billing, insurance coverage, and patient satisfaction.
+## Overview
+A healthcare analytics portfolio project using Microsoft Power BI to explore patient demographics, admissions, departments, billing, insurance coverage, discharge outcomes, and satisfaction.
 
-## Tools Used
+## Dashboard areas
+- Hospital overview
+- Patient analysis
+- Department analysis
+- Financial analysis
+- Doctor analysis
+- Admission and discharge analysis
+- Insurance and satisfaction
+
+## Tools
 - Microsoft Power BI
 - Power Query
 - DAX
-- Data Visualization
+- Data visualization
 
-## Dashboard Features
-- Hospital performance KPIs
-- Patient demographic analysis
-- Department-wise patient analysis
-- Financial and billing analysis
-- Doctor performance analysis
-- Admission and discharge trends
-- Insurance and patient satisfaction analysis
+## Open the report
+Download `Hospital_Patient_Dashboard.pbix` from this repository and open it with Power BI Desktop.
 
-## Key Objectives
-- Monitor hospital patient activity.
-- Analyze department workload.
-- Understand billing and insurance trends.
-- Evaluate patient satisfaction.
-- Support data-driven operational decisions.
+## GitHub Pages website
+This repository includes `index.html`, a responsive project showcase page. To publish it:
+1. Open repository **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select branch `main` and folder `/ (root)`.
+4. Click **Save** and wait for the published URL.
 
-## How to View
-1. Download `Hospital_Patient_Dashboard.pbix` from this repository.
-2. Open it using Power BI Desktop.
-3. Explore the report pages, filters, and visualizations.
+## Important limitation
+GitHub can host the PBIX file and portfolio page, but it cannot render a native Power BI report interactively in a browser. Visitors download the PBIX and open it in Power BI Desktop.
 
-## Author
-Data Analytics Portfolio Project
+## Privacy checklist before making the repository public
+- Confirm the data is synthetic or properly anonymized.
+- Check whether the PBIX contains names, patient IDs, room numbers, or other identifiable/sensitive fields.
+- Remove real patient data and any sensitive information from the report model before committing.
+- Do not upload the original CSV unless it is safe to publish.
